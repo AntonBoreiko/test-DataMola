@@ -69,7 +69,7 @@ select {
 }
 header {
    background: #222;
-   padding-top: 3em;
+   padding-top: 4em;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -93,7 +93,7 @@ header {
    align-items: center;
 }
 .header__block h1 {
-   font-size: 3rem;
+   font-size: 3.5rem;
    color: #bb9a60;
 }
 .header__foto {
@@ -135,5 +135,123 @@ header {
 
 main {
    background: #222;
-   padding-top: 3em;
+   padding: 3em 0;
+}
+
+.main__content-wrapper {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 50px;
+}
+.main__contact {
+   text-align: right;
+}
+.main__contact-title {
+   font-size: 2rem;
+   color: #bb9a60;
+}
+/* .main__contact-box {
+   text-align: left;
+} */
+.main__contact-box a {
+   display: inline-block;
+   margin-left: 30px;
+
+   font-size: 35px;
+   color: #bb9a60;
+   text-decoration: none;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: linear;
+}
+.main__contact-box a:hover {
+   color: #fff;
+}
+
+.main__contact-item a {
+   display: block;
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+.main__content h2 {
+   font-size: 2rem;
+   color: #bb9a60;
+}
+.main__content-greetings {
+   font-size: 25px;
+   color: #bb9a60;
+   width: 60%;
+}
+
+.main__info {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+.main__courses {
+   width: 60%;
+}
+.main__info-education {
+   width: 40%;
+   text-align: right;
+}
+.main__info h4 {
+   font-size: 2rem;
+   color: #bb9a60;
+   margin-bottom: 30px;
+}
+
+.main__courses-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+.main__courses span {
+   font-size: 25px;
+   color: #bb9a60;
+}
+
+.main__courses p {
+   font-size: 20px;
+   color: #bb9a60;
+   margin: 15px 0;
+}
+
+.main__courses a {
+   font-size: 20px;
+   color: #bb9a60;
+   text-decoration: none;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: linear;
+}
+.main__courses a:hover {
+   color: #fff;
+}
+
+.main__info-text {
+   font-size: 25px;
+   color: #bb9a60;
+}
+.main__info-content {
+   font-size: 20px;
+   color: #bb9a60;
+   margin: 15px 0;
+}
+
+.main__facts {
+}
+
+.main__facts-title {
+   font-size: 2rem;
+   color: #bb9a60;
+   margin-bottom: 30px;
+}
+
+.main__facts-list {
+}
+.main__facts-item {
+   list-style: none;
+   font-size: 20px;
+   color: #bb9a60;
+   margin: 15px 0;
 }
