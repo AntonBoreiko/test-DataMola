@@ -62,6 +62,9 @@ select {
       scroll-behavior: auto !important;
    }
 }
+* {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 .container {
    max-width: 1218px;
    margin: 0px auto;
@@ -79,7 +82,6 @@ header {
 }
 .header__block {
    display: flex;
-   width: 90%;
    background-color: #2c3e50;
    padding: 60px;
    justify-content: space-between;
@@ -88,6 +90,7 @@ header {
 .header__block h1 {
    font-size: 3.5rem;
    color: #bb9a60;
+   margin-right: 15px;
 }
 .header__foto {
    width: 500px;
@@ -122,8 +125,36 @@ header {
       border-color: orange;
    }
 }
+@media (max-width: 1024px) {
+   header {
+      padding: 20px;
+   }
+}
+@media (max-width: 768px) {
+   header {
+      min-height: 500px;
+   }
+   .header__foto {
+      display: none;
+   }
+}
+@media (max-width: 480px) {
+   header {
+      min-height: 300px;
+   }
+   .header__block-autotext {
+      display: none;
+   }
+   .header__block {
+      padding: 30px;
+   }
+   .header__block h1 {
+      font-size: 40px;
+   }
+}
 main {
    background: #222;
+   padding: 0px 30px;
 }
 .main__content-wrapper {
    display: flex;
@@ -136,6 +167,7 @@ main {
 .main__contact-title {
    font-size: 2rem;
    color: #bb9a60;
+   margin-bottom: 20px;
 }
 .main__contact-box a {
    display: inline-block;
@@ -152,21 +184,23 @@ main {
 }
 .main__contact-item a {
    display: block;
-   font-size: 30px;
+   font-size: 25px;
    margin-bottom: 10px;
 }
 .main__content h2 {
    font-size: 2rem;
    color: #bb9a60;
+   margin-bottom: 20px;
 }
 .main__content-greetings {
    font-size: 25px;
    color: #bb9a60;
-   width: 60%;
+   width: 80%;
 }
 .main__info {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
    padding: 50px 0;
 }
 .main__courses {
@@ -229,7 +263,7 @@ main {
 }
 .main__facts-item {
    list-style: none;
-   font-size: 20px;
+   font-size: 25px;
    color: #bb9a60;
    margin: 15px 0;
 }
@@ -242,7 +276,7 @@ main {
    margin-bottom: 30px;
 }
 .main__question-text {
-   font-size: 20px;
+   font-size: 25px;
    color: #bb9a60;
 }
 .element-animation {
@@ -257,4 +291,79 @@ main {
    padding: 70px 0;
    transform: translateX(0px);
    transition: all 0.8s;
+}
+@media (max-width: 1400px) {
+   .main__facts {
+      padding: 30px 0;
+      transform: translateX(0px);
+      opacity: 0.2;
+   }
+   .element-animation.element-showSlow {
+      padding: 30px 0;
+      transition: all 0.8s;
+   }
+}
+@media (max-width: 1024px) {
+   .container {
+      width: 100%;
+   }
+   main {
+      padding: 0 20px;
+   }
+   .main__content-greetings {
+      width: 80%;
+   }
+   .main__info-education {
+      text-align: right;
+   }
+}
+@media (max-width: 768px) {
+   h2,
+   h3,
+   h4 {
+      text-align: center;
+   }
+   .main__contact-box {
+      text-align: right;
+   }
+   .main__content-greetings {
+      width: 100%;
+   }
+   .main__content-wrapper {
+      flex-wrap: wrap;
+      padding: 30px 0;
+   }
+   .main__content-about {
+      margin-bottom: 50px;
+      text-align: center;
+   }
+   .main__courses {
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   .main__courses-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+   }
+   .main__courses-wrapper > div {
+      margin-bottom: 30px;
+   }
+   .main__info-education {
+      width: 100%;
+      text-align: center;
+   }
+   .main__contact-item > a {
+      margin-left: 0;
+   }
+}
+@media (max-width: 770px) {
+   .main__contact-box {
+      text-align: center;
+   }
+}
+@media (max-width: 480px) {
+   .main__contact-item > a {
+      margin-left: 0;
+   }
 }
